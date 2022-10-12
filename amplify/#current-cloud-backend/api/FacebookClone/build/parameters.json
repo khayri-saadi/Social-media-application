@@ -1,0 +1,13 @@
+{
+    "AppSyncApiName": "FacebookClone",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "S3DeploymentBucket": "amplify-facebookclone-staging-131527-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/de0aa6706faf1894233f220af307c6c5a860f885"
+}

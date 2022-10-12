@@ -1,0 +1,87 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-facebookclone-staging-131527-authRole",
+      "UnauthRoleArn": "arn:aws:iam::040673270257:role/amplify-facebookclone-staging-131527-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::040673270257:role/amplify-facebookclone-staging-131527-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-facebookclone-staging-131527-deployment",
+      "UnauthRoleName": "amplify-facebookclone-staging-131527-unauthRole",
+      "StackName": "amplify-facebookclone-staging-131527",
+      "StackId": "arn:aws:cloudformation:us-east-1:040673270257:stack/amplify-facebookclone-staging-131527/72b4fd90-431d-11ed-b8ef-0e798a649f1f",
+      "AmplifyAppId": "d2pyl9j82yvuu2"
+    }
+  },
+  "auth": {
+    "FacebookClone": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "signupAttributes": [],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "output": {
+        "UserPoolId": "us-east-1_zc2SAuak4",
+        "AppClientIDWeb": "74fd5rufnhhn570q9esg8vpt5q",
+        "AppClientID": "34164om2c6k88k1pb79gac56n9",
+        "IdentityPoolId": "us-east-1:54ceee0e-888b-4b9c-92fd-5a8009ae4867",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:040673270257:userpool/us-east-1_zc2SAuak4",
+        "IdentityPoolName": "testAuthIdentityPool__staging",
+        "UserPoolName": "FacebookClone"
+      },
+      "lastPushTimeStamp": "2022-10-03T23:52:01.159Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-facebookclone-staging-131527-deployment/amplify-cfn-templates/auth/FacebookClone-cloudformation-template.json",
+        "logicalId": "authFacebookClone"
+      }
+    }
+  },
+  "api": {
+    "FacebookClone": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 30,
+              "description": "api key description"
+            }
+          },
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "AWS_IAM"
+            }
+          ]
+        },
+        "GraphQLAPIIdOutput": "kdsw77mvlrhfxavsx5crd7545y",
+        "GraphQLAPIEndpointOutput": "https://mscjearqajd5hnhdyyxuan5yoa.appsync-api.us-east-1.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-qb7bwits6za5vpxtimgpuwmvfi"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-facebookclone-staging-131527-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apiFacebookClone"
+      },
+      "lastPushTimeStamp": "2022-10-03T23:52:04.747Z",
+      "lastPushDirHash": "R41vQZEo01Ku8piQSoe/jugllxg="
+    }
+  }
+}

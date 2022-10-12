@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-facebookclone-staging-131527-authRole",
+      "UnauthRoleArn": "arn:aws:iam::040673270257:role/amplify-facebookclone-staging-131527-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::040673270257:role/amplify-facebookclone-staging-131527-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-facebookclone-staging-131527-deployment",
+      "UnauthRoleName": "amplify-facebookclone-staging-131527-unauthRole",
+      "StackName": "amplify-facebookclone-staging-131527",
+      "StackId": "arn:aws:cloudformation:us-east-1:040673270257:stack/amplify-facebookclone-staging-131527/72b4fd90-431d-11ed-b8ef-0e798a649f1f",
+      "AmplifyAppId": "d2pyl9j82yvuu2"
+    },
+    "categories": {
+      "auth": {
+        "FacebookClone": {}
+      }
+    }
+  }
+}
